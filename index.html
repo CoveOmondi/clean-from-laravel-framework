@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clean Emails and Phone Numbers</title>
+</head>
+<body>
+    <h1>Clean Emails and Phone Numbers</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Email 1</th>
+                <th>Email 2</th>
+                <th>Email 3</th>
+                <th>Main Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($data as $row)
+                <tr>
+                    <td>{{ $row['Email 1'] }}</td>
+                    <td>{{ $row['Email 2'] }}</td>
+                    <td>{{ $row['Email 3'] }}</td>
+                    <td>{{ $row['Main Phone'] }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</body>
+</html>
